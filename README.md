@@ -65,7 +65,7 @@ roslaunch limo_base limo_base.launch
 
 找到文件中的**motion_cmd_sub_**，修改后面的"/cmd_vel"改为"/xxxx"，xxxx为自己设置的名字，即下图高亮部分
 
-<img src="D:\Study\Limo-Control\README\image-20240228211129539.png" alt="image-20240228211129539" style="zoom:50%;" />
+<img src="https://github.com/AugetyVolta/Limo-Control/blob/main/README/image-20240228211129539.png?raw=true" alt="image-20240228211129539" style="zoom:50%;" />
 
 2. 回到agilex_ws文件夹，进行编译
 
