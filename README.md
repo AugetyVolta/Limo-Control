@@ -45,6 +45,18 @@ sudo ufw disable
 
 登录密码：agx
 
+### limo端开启底盘
+
+> 在limo小车ubuntu上操作
+
+终端中运行
+
+```
+roslaunch limo_base limo_base.launch
+```
+
+即可完成设置
+
 
 ### 修改limo车名
 
@@ -67,13 +79,7 @@ cd ~/agilex_ws
 catkin_make
 ```
 
-3. 重新启动小车ros master
-
-```
-roslaunch limo_base limo_base.launch
-```
-
-如果之前开启了ros master，必须关闭后重启才能使用修改后的名字进行控制。
+**如果之前开启了小车底盘，必须关闭后重启才能使用修改后的名字进行控制。**
 
 ### 修改limo ros节点名
 
@@ -107,19 +113,6 @@ sudo getdit /etc/hosts
 127.0.1.1后对应的hostname原本为agilex，修改为待修改的hostname保存即可，类似这里的`agilex7490`。
 
 <img src="README/image-20240305104850987.png?raw=true" style="zoom:67%;" />
-
-
-### limo端开启底盘
-
-> 在limo小车ubuntu上操作
-
-终端中运行
-
-```
-roslaunch limo_base limo_base.launch
-```
-
-即可完成设置
 
 ## 多车连接
 
@@ -225,7 +218,9 @@ data: "connected"
 
 #### 启动ros master
 
-在master，即本项目中的Ubuntu18.04中运行roscore，终端中输入roscore即可启动
+在master，即本项目中的Ubuntu18.04中运行roscore，终端中输入roscore即可启动，
+
+**注意要先启动master**
 
 #### 启动车底盘
 
