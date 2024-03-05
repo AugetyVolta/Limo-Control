@@ -58,7 +58,7 @@ sudo ufw disable
 
 找到文件中的**motion_cmd_sub_**，修改后面的"/cmd_vel"改为"/xxxx"，xxxx为自己设置的名字，即下图高亮部分，建议修改为类似`/cmd_vel7490`，7490为limo小车编号
 
-<img src="https://github.com/AugetyVolta/Limo-Control/blob/main/README/image-20240228211129539.png?raw=true" alt="image-20240228211129539" style="zoom:50%;" />
+<img src="README/image-20240228211129539.png?raw=true" alt="image-20240228211129539" style="zoom:50%;" />
 
 2. 回到agilex_ws文件夹，进行编译
 
@@ -86,7 +86,7 @@ roslaunch limo_base limo_base.launch
 ```
 修改图中高亮部分，出厂默认设置是limo_base_node，修改为类似`limo_base_node7490`，7490是小车编号，修改完保存即可。
 
-<img src="image.png" alt="alt text" style="zoom:67%;" />
+<img src="README/image.png" alt="alt text" style="zoom:67%;" />
 
 ### 修改limo系统hostname
 
@@ -104,9 +104,9 @@ sudo hostnamectl set-hostname xxx
 sudo getdit /etc/hosts
 ```
 
-127.0.1.1后对应的hostname原本为agilex，修改为待修改的hostname保存即可。
+127.0.1.1后对应的hostname原本为agilex，修改为待修改的hostname保存即可，类似这里的`agilex7490`。
 
-<img src="D:\Study\实验室实习\Limo-Control\README\image-20240305104850987.png" alt="image-20240305104850987" style="zoom:67%;" />
+<img src="README/image-20240305104850987.png?raw=true" style="zoom:67%;" />
 
 
 ### limo端开启底盘
@@ -249,7 +249,7 @@ rostopic list
 
 可以看到类似/cmd_vel7490的项出现，以/cmd_vel开头的项就是小车设备名
 
-![image-20240305110802668](D:\Study\实验室实习\Limo-Control\README\image-20240305110802668.png)
+![image-20240305110802668](README/image-20240305110802668.png?raw=true)
 
 #### 查看ros节点
 
@@ -261,7 +261,7 @@ rosnode list
 
 可以看到类似/limo_base_node7490的项出现，这就是刚才修改的ros节点名
 
-![image-20240305110850489](D:\Study\实验室实习\Limo-Control\README\image-20240305110850489.png)
+![image-20240305110850489](README/image-20240305110850489.png?raw=true)
 
 ## 常见问题
 
